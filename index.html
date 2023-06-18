@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>2.5 JS dom assignment</title>
+</head>
+
+<body>
+    <h2>DOM with the 4 arithmetic operations</h2>
+    <h3>Please enter 2 numbers:</h3>
+
+    <!-- <get the input numbers> -->
+    <span>
+      <label for="inp1" style="font-size: 20px";>First number:</label>
+      <input type="text" id="inp1" name="inp1";>
+      <label for="inp2" style="font-size: 20px";>Second number:</label>
+      <input type="text" id="inp2" name="inp2";>
+    </span>
+    <p style="color:red; font-size:22px" id = "demoWarnA"></p>
+    <h3>Please choose an operation:</h3>
+    <div>
+    <!-- select from 4 ops-->
+        <input class ="button" value="+" onclick="processPlus()">
+        <input class ="button" value="-" onclick="processMinus()">
+        <input class ="button" value="x" onclick="processTimes()">
+        <input class ="button" value="/" onclick="processDivide()">
+    </div>
+
+    <div>
+        <!-- print result-->
+        <p style="color:red; font-size:22px" id = "demoWarnB"></p>
+    <h3>The outcome is:</h3>
+        <p id = "demo" style="text-align: center"></p>
+    </div>
+
+    <script src = "fourOps.js"></script>
+</body>
+
+</html>
